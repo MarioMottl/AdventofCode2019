@@ -29,6 +29,11 @@ use anyhow::Result;
 use std::fs::File;
 use std::io::Read;
 
+#[allow(dead_code)]
+const INPUT_FILE: &str = "input.txt";
+#[allow(dead_code)]
+const EXAMPLE_FILE: &str = "example.txt";
+
 /*
 https://adventofcode.com/$YEAR_NUMBER/day/$DAY_NUMBER
 */
@@ -40,11 +45,6 @@ pub fn read_input(file_path: &str) -> Result<String> {
         .expect("Error reading file");
     Ok(contents)
 }
-
-#[allow(dead_code)]
-const INPUT_FILE: &str = "input.txt";
-#[allow(dead_code)]
-const EXAMPLE_FILE: &str = "example.txt";
 
 fn main() {
     #[allow(unused_variables)]
